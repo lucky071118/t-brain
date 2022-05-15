@@ -6,7 +6,7 @@ from typing import Generator, Dict
 
 def get_raw_dataset() -> Generator[Dict, None, None]:
     """return generator"""
-    file_name = "sample.json"
+    file_name = "train_all.json"
     file_path = path.join(path.dirname(__file__), file_name)
     raw_data_set = _read_file(file_path)
     for raw_data in raw_data_set:
