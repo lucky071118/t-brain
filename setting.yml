@@ -1,0 +1,26 @@
+dataset:
+  file: t_brain/data/train_all.json
+
+server:
+  ip: 0.0.0.0
+  port: 8080
+  debug: false
+
+doc2vec_model:
+  size: 128
+  file: t_brain/model/my_doc2vec_model
+  min_count: 2
+  epoch: 40
+
+valid_model:
+  epoch: 20
+  batch: 1
+  split: 0.2
+  file: t_brain/model/my_valid_model
+  # The activation functions include sigmoid, relu, selu, elu, softmax, tanh, etc.
+  layer:
+      - 64
+      - sigmoid
+      - 32
+      - sigmoid
+  
