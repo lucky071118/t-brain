@@ -1,0 +1,12 @@
+flask
+numpy
+sklearn
+gensim
+jieba
+keras
+tensorflow
+pydantic
+yamlpy
+pytest
+pylint
+black
