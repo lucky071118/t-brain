@@ -1,3 +1,5 @@
 .vscode
 *.json
 *.pyc
+/t_brain/model/*
+!/t_brain/model/*.py
